@@ -1,3 +1,7 @@
+% Metódy inžinierskej práce, ak. rok 2026/27
+% Spresnenie zamerania projektu
+% Položky VV-A1-03, VV-A1-04, VV-A1-09 formulára žiadosti pre aplikovaný výskum
+
 \documentclass[11pt,a4paper,slovak]{article}
 
 \usepackage[slovak]{babel}
@@ -8,7 +12,7 @@
 
 \title{Spresnenie zamerania projektu}
 
-\author{Dmytro Kolodeznyi \and Meno Priezvisko \and Meno Priezvisko \and Oleksandr Komarenko\\[6pt]
+\author{Dmytro Kolodeznyi \and Bohdan Kochkin \and Oleksandr Komarenko \and Daniel Kollár\\[6pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
 	{\small Fakulta informatiky a informačných technológií}\\[4pt]
 	{\small Cvičiaci: Ing. Oliver Udvardi}
@@ -20,47 +24,81 @@
 
 \maketitle
 
-\section*{\quad Názov projektu}
+\section*{VV-A1-03 \quad Názov projektu}
 
 Detekcia prania špinavých peňazí v kryptomenových transakciách pomocou analýzy
 transakčných grafov
 
+\subsection*{Project title in English}
 
-\section*{\quad Akronym projektu}
+Detection of Money Laundering in Cryptocurrency Transactions Using Transaction
+Graph Analysis
+
+\section*{VV-A1-04 \quad Akronym projektu}
 
 STOPA \ (\emph{Sledovanie Transakčných Operácií a Podozrivých Aktivít})
 
-\section*{\quad Anotácia}
+\section*{VV-A1-09 \quad Anotácia}
 
 Kryptomeny sa stali významným nástrojom na presun hodnoty mimo tradičného
-bankového systému. Hoci sú transakcie vo verejných blockchainoch trvalo
-zaznamenané a dostupné komukoľvek, totožnosť ich účastníkov zostáva skrytá za
+bankového systému. Transakcie vo verejných blockchainoch sú trvalo zaznamenané
+a dostupné komukoľvek, totožnosť ich účastníkov však zostáva skrytá za
 pseudonymnými adresami. Páchatelia túto vlastnosť zneužívajú: prostriedky
-pochádzajúce z podvodov, ransomvéru a nelegálnych trhovísk rozdeľujú do reťazcov
-adries, prepierajú cez mixéry a zmenárne bez overovania totožnosti a následne ich
+z~podvodov, ransomvéru a nelegálnych trhovísk rozdeľujú do reťazcov adries,
+prepierajú cez mixéry a zmenárne bez overovania totožnosti a následne ich
 vyberajú ako zdanlivo legitímny príjem. Orgány dohľadu aj povinné osoby podľa
-smerníc Európskej únie o boji proti praniu špinavých peňazí a podľa nariadenia
-MiCA tak čelia úlohe, na ktorú postupy navrhnuté pre bankové prostredie
-nepostačujú.
+nariadenia MiCA tak čelia úlohe, na ktorú postupy navrhnuté pre bankové
+prostredie nepostačujú.
 
 Cieľom projektu je navrhnúť a overiť metodiku odhaľovania schém prania špinavých
-peňazí v kryptomenových transakciách, založenú na analýze transakčného grafu.
-Projekt sa zameria na tri oblasti. Prvou je vytvorenie typológie praktík, ktoré
-sa používajú na zahladenie pôvodu prostriedkov. Druhou je návrh množiny
-ukazovateľov a grafových príznakov, ktoré tieto praktiky odlišujú od bežnej
-hospodárskej činnosti. Treťou je postup hodnotenia rizika adresy alebo skupiny
-adries vrátane zrozumiteľného zdôvodnenia, prečo bola označená za podozrivú.
+peňazí založenú na analýze transakčného grafu. Zameriame sa na tri oblasti:
+typológiu praktík používaných na zahladenie pôvodu prostriedkov, návrh množiny
+grafových príznakov, ktoré tieto praktiky odlišujú od bežnej hospodárskej
+činnosti, a postup hodnotenia rizika adresy vrátane zrozumiteľného zdôvodnenia.
 
-Osobitná pozornosť bude venovaná použiteľnosti výsledkov v praxi. Analytik
-potrebuje nielen číselné skóre, ale aj vysvetlenie a prehľadnú vizualizáciu
-podozrivého reťazca transakcií. Rovnako sa budeme zaoberať mierou nesprávnych
-označení, pretože neopodstatnené podozrenie má pre dotknutú osobu reálne
-dôsledky, a otázkou ochrany súkromia pri práci s verejne dostupnými
-blockchainovými údajmi.
+Úspešnosť riešenia budeme merať týmito ukazovateľmi: presnosť a úplnosť detekcie
+(precision, recall, F1) na verejne dostupnom datasete označených transakcií,
+miera falošne pozitívnych označení pri pevne stanovenej úrovni úplnosti, počet
+rozlíšených typologických vzorov, čas vyhodnotenia grafu v~závislosti od počtu
+uzlov a podiel označení doplnených o~zrozumiteľné zdôvodnenie. Cieľovou hodnotou
+je udržať mieru falošne pozitívnych označení pod úrovňou bežnou v~bankovom
+monitoringu pri zachovaní úplnosti detekcie. Dôraz na nesprávne označenia je
+zámerný, neopodstatnené podozrenie má pre dotknutú osobu reálne dôsledky.
 
-Očakávaným výstupom projektu je overená metodika, sada vyhodnotených
-ukazovateľov a návrh referenčnej architektúry nástroja použiteľného pre finančnú
-spravodajskú jednotku, povinné osoby a orgány činné v trestnom konaní.
+Očakávaným výstupom je overená metodika, sada vyhodnotených ukazovateľov a návrh
+referenčnej architektúry nástroja použiteľného pre finančnú spravodajskú
+jednotku, povinné osoby a orgány činné v trestnom konaní.
 
+\subsection*{Annotation in English}
+
+Cryptocurrencies have become a significant means of transferring value outside
+the traditional banking system. Transactions in public blockchains are
+permanently recorded and available to anyone, yet the identity of the parties
+remains hidden behind pseudonymous addresses. Offenders exploit this property:
+funds from fraud, ransomware and illegal marketplaces are split across chains of
+addresses, laundered through mixers and exchanges without identity verification,
+and subsequently withdrawn as seemingly legitimate income. Supervisory
+authorities and obliged entities under the MiCA regulation therefore face a task
+for which procedures designed for the banking environment are not sufficient.
+
+The aim of the project is to design and validate a methodology for detecting
+money laundering schemes based on transaction graph analysis. We will address
+three areas: a typology of the practices used to obscure the origin of funds, a
+set of graph features that distinguish these practices from ordinary economic
+activity, and a risk assessment procedure for an address, including a
+comprehensible justification.
+
+Success will be measured by the following indicators: detection precision,
+recall and F1 on a publicly available dataset of labelled transactions, the rate
+of false positives at a fixed recall level, the number of distinguished
+typological patterns, the evaluation time as a function of graph size, and the
+share of flags accompanied by a comprehensible justification. The target is to
+keep the false positive rate below the level common in banking monitoring while
+maintaining detection recall. The emphasis on incorrect flags is deliberate, as
+an unfounded suspicion has real consequences for the person concerned.
+
+The expected outputs are a validated methodology, a set of evaluated indicators
+and a reference architecture of a tool usable by a financial intelligence unit,
+obliged entities and law enforcement authorities.
 
 \end{document}
