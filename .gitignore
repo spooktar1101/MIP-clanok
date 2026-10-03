@@ -10,6 +10,3 @@
 *.lot
 *.fls
 *.fdb_latexmk
-
-out/
-clanok.pdf
