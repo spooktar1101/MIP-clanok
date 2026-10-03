@@ -1,0 +1,15 @@
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.dvi
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+
+out/
+clanok.pdf

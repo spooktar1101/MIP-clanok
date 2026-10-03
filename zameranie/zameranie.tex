@@ -1,0 +1,66 @@
+\documentclass[11pt,a4paper,slovak]{article}
+
+\usepackage[slovak]{babel}
+\usepackage[IL2]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{url}
+
+\title{Spresnenie zamerania projektu}
+
+\author{Meno Priezvisko \and Meno Priezvisko \and Meno Priezvisko \and Oleksandr Komarenko\\[6pt]
+	{\small Slovenská technická univerzita v Bratislave}\\
+	{\small Fakulta informatiky a informačných technológií}\\[4pt]
+	{\small Cvičiaci: Ing. Oliver Udvardi}
+	}
+
+\date{\small 3. október 2026}
+
+\begin{document}
+
+\maketitle
+
+\section*{\quad Názov projektu}
+
+Detekcia prania špinavých peňazí v kryptomenových transakciách pomocou analýzy
+transakčných grafov
+
+
+\section*{\quad Akronym projektu}
+
+STOPA \ (\emph{Sledovanie Transakčných Operácií a Podozrivých Aktivít})
+
+\section*{\quad Anotácia}
+
+Kryptomeny sa stali významným nástrojom na presun hodnoty mimo tradičného
+bankového systému. Hoci sú transakcie vo verejných blockchainoch trvalo
+zaznamenané a dostupné komukoľvek, totožnosť ich účastníkov zostáva skrytá za
+pseudonymnými adresami. Páchatelia túto vlastnosť zneužívajú: prostriedky
+pochádzajúce z podvodov, ransomvéru a nelegálnych trhovísk rozdeľujú do reťazcov
+adries, prepierajú cez mixéry a zmenárne bez overovania totožnosti a následne ich
+vyberajú ako zdanlivo legitímny príjem. Orgány dohľadu aj povinné osoby podľa
+smerníc Európskej únie o boji proti praniu špinavých peňazí a podľa nariadenia
+MiCA tak čelia úlohe, na ktorú postupy navrhnuté pre bankové prostredie
+nepostačujú.
+
+Cieľom projektu je navrhnúť a overiť metodiku odhaľovania schém prania špinavých
+peňazí v kryptomenových transakciách, založenú na analýze transakčného grafu.
+Projekt sa zameria na tri oblasti. Prvou je vytvorenie typológie praktík, ktoré
+sa používajú na zahladenie pôvodu prostriedkov. Druhou je návrh množiny
+ukazovateľov a grafových príznakov, ktoré tieto praktiky odlišujú od bežnej
+hospodárskej činnosti. Treťou je postup hodnotenia rizika adresy alebo skupiny
+adries vrátane zrozumiteľného zdôvodnenia, prečo bola označená za podozrivú.
+
+Osobitná pozornosť bude venovaná použiteľnosti výsledkov v praxi. Analytik
+potrebuje nielen číselné skóre, ale aj vysvetlenie a prehľadnú vizualizáciu
+podozrivého reťazca transakcií. Rovnako sa budeme zaoberať mierou nesprávnych
+označení, pretože neopodstatnené podozrenie má pre dotknutú osobu reálne
+dôsledky, a otázkou ochrany súkromia pri práci s verejne dostupnými
+blockchainovými údajmi.
+
+Očakávaným výstupom projektu je overená metodika, sada vyhodnotených
+ukazovateľov a návrh referenčnej architektúry nástroja použiteľného pre finančnú
+spravodajskú jednotku, povinné osoby a orgány činné v trestnom konaní.
+
+
+\end{document}
